@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15" version="24.8.4">
   <diagram name="Страница — 1" id="lC8ayZX5M44GHehxaap9">
-    <mxGraphModel>
+    <mxGraphModel dx="1242" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OYCjBTnkLX8SlEyvBUft-1" target="OYCjBTnkLX8SlEyvBUft-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-1" value="Webhook Find Devices" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="220" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-3" value="CommandService.RequestConfig&lt;div&gt;(cix, uid string)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="310" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OYCjBTnkLX8SlEyvBUft-5" target="OYCjBTnkLX8SlEyvBUft-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-5" value="Bridge&lt;div&gt;ProvideDevice&lt;/div&gt;&lt;div&gt;Получает список устройств и id пользователя. Возвращает список ошибок&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="450" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-6" value="expractPartner&lt;div&gt;c ctx возвращает Partner структуру&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="570" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-8" value="AccountsService&lt;div&gt;FindAccountByExteralId(cdx, accountFilter{UserId, PartnerId})&lt;/div&gt;&lt;div&gt;Return - Account&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="631" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-9" value="AliasUpdater&lt;div&gt;UpdateUserAliases(cox, Account.UserId)&lt;/div&gt;&lt;div&gt;Return - empty&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="691" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-10" value="sort.Sort(request.Device)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="751" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-11" value="DeviceConverter&lt;div&gt;ConvertDeviceToDomain&lt;/div&gt;&lt;div&gt;Return - domain.Device&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="811" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-12" value="ProvideDevicesService&lt;div&gt;SyncDeletedDevice(ctx, devices, account)&lt;/div&gt;&lt;div&gt;Return empty&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="871" width="270" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-18" value="ProvideDevicesService&lt;div&gt;CreateOrUpdateDevices(ctx, devices)&lt;/div&gt;&lt;div&gt;Return - createdDeviceId([]string), process_devices. errors&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="930" width="270" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-19" value="FilterDeviceById(ctx, process_devices, createdDevices)&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22ProvideDevicesService%26lt%3Bdiv%26gt%3BCreateOrUpdateDevices(ctx%2C%20devices)%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3BReturn%20-%20createdDeviceId(%5B%5Dstring)%2C%20devices.%20errors%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22550%22%20y%3D%22930%22%20width%3D%22270%22%20height%3D%2259%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;div&gt;Return - devices(newDevices)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="989" width="270" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-20" value="DeviceParam&lt;div&gt;AddLinkedDevicesToHistory(ctx, account.UserId, partnerId, newDevices, acc.LinkedAccount)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1048" width="510" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="OYCjBTnkLX8SlEyvBUft-21" value="PartnerSyncStatus&lt;div&gt;UpdateSynchronizePartnerStatus(ctx, userId, partnerId, status: off)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1110" width="510" height="62" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
