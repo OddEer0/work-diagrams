@@ -29,25 +29,25 @@
           <mxGeometry x="550" y="691" width="370" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-10" value="sort.Sort(request.Device)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="751" width="270" height="60" as="geometry" />
+          <mxGeometry x="550" y="1040" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-11" value="DeviceConverter&lt;div&gt;ConvertDeviceToDomain&lt;/div&gt;&lt;div&gt;Return - domain.Device&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="811" width="270" height="60" as="geometry" />
+          <mxGeometry x="550" y="1100" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-12" value="ProvideDevicesService&lt;div&gt;SyncDeletedDevice(ctx, devices, account)&lt;/div&gt;&lt;div&gt;Return empty&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="871" width="270" height="59" as="geometry" />
+          <mxGeometry x="550" y="1160" width="270" height="59" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-18" value="ProvideDevicesService&lt;div&gt;CreateOrUpdateDevices(ctx, devices)&lt;/div&gt;&lt;div&gt;Return - createdDeviceId([]string), process_devices. errors&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="930" width="270" height="59" as="geometry" />
+          <mxGeometry x="550" y="1219" width="270" height="59" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-19" value="FilterDeviceById(ctx, process_devices, createdDevices)&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22ProvideDevicesService%26lt%3Bdiv%26gt%3BCreateOrUpdateDevices(ctx%2C%20devices)%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3BReturn%20-%20createdDeviceId(%5B%5Dstring)%2C%20devices.%20errors%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22550%22%20y%3D%22930%22%20width%3D%22270%22%20height%3D%2259%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;div&gt;Return - devices(newDevices)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="989" width="270" height="59" as="geometry" />
+          <mxGeometry x="550" y="1278" width="270" height="59" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-20" value="DeviceParam&lt;div&gt;AddLinkedDevicesToHistory(ctx, account.UserId, partnerId, newDevices, acc.LinkedAccount)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="1048" width="510" height="62" as="geometry" />
+          <mxGeometry x="550" y="1337" width="510" height="62" as="geometry" />
         </mxCell>
         <mxCell id="OYCjBTnkLX8SlEyvBUft-21" value="PartnerSyncStatus&lt;div&gt;UpdateSynchronizePartnerStatus(ctx, userId, partnerId, status: off)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="1110" width="510" height="62" as="geometry" />
+          <mxGeometry x="550" y="1399" width="510" height="62" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
